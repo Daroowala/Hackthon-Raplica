@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    
+</head>
+<body>
+    <section>
+        <h2>Manage Student</h2>
+        <form id="student-form">
+            <!-- Add Student Fields -->
+            <fieldset>
+                <legend>Add Student</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required>
+
+                <label for="cnic">CNIC:</label>
+                <input type="text" id="cnic" placeholder="CNIC" required>
+
+                <label for="user-type">User Type:</label>
+                <select id="user-type">
+                    <option value="Student">Student</option>
+                </select>
+            </fieldset>
+
+            <!-- Upload Marks Fields -->
+            <fieldset>
+                <legend>Upload Student Marks</legend>
+                <label for="course">Course:</label>
+                <input type="text" id="course" placeholder="Course" required>
+
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" placeholder="Student Id" required>
+
+                <label for="marks">Marks:</label>
+                <input type="number" id="marks" placeholder="Marks" required>
+
+                <label for="total-marks">Total Marks:</label>
+                <input type="number" id="total-marks" placeholder="Total Marks" required>
+
+                <label for="grade">Grade:</label>
+                <input type="text" id="grade" placeholder="Grade" required>
+            </fieldset>
+
+            <button type="button" onclick="handleSubmit()">Submit</button>
+        </form>
+    </section>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
